@@ -1,0 +1,62 @@
+// preset params
+@border-color: #999;
+@box-bg-color: #eee;
+@common-padding: 10px;
+@box-height: 50px;
+@grid-columns: 12;
+
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  padding: @common-padding;
+}
+
+.clearFix() {
+  &::before,
+  &::after {
+    display: block;
+    content: " ";
+    clear: both;
+  }
+}
+
+.container {
+  height: 100%;
+  padding: @common-padding;
+  box-sizing: border-box;
+  border: 1px solid @border-color;
+  .clearFix();
+
+  .row {
+    box-sizing: border-box;
+    .clearFix();
+  }
+}
+
+.box {
+  height: @box-height;
+  background: @box-bg-color;
+  margin: 10px;
+  border: 1px solid @border-color;
+}
+
+.col-mixin(@name; @index: 1) when (@index =< @grid-columns) {
+  .col-@{name}-@{index} {
+    float: left;
+    width: (100% / 12 * @index);
+  }
+  .col-mixin(@name, (@index + 1));
+}
+
+@media screen and (min-width: 769px) {
+  .col-mixin(md);
+}
+
+@media screen and (max-width: 768px) {
+  .col-mixin(sm);
+}
+
