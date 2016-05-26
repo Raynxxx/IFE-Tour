@@ -1,0 +1,277 @@
+html, body {
+  -webkit-user-select: none;   /* 禁止选中文本（如无文本选中需求，此为必选项） */
+  user-select: none;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  box-sizing: border-box;
+  color: #333;
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+a, img {
+  -webkit-touch-callout: none; /* 禁止长按链接与图片弹出菜单 */
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+body > .header {
+  height: 2.1rem;
+  line-height: 2.1rem;
+  background-color: #91D4DA;
+  position: relative;
+  color: #f5f5f5;
+}
+
+body >.header > a.goback {
+  position: absolute;
+  left: 0.3rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 1.1rem;
+}
+
+body > .header a.goback img {
+  height: 1.1rem;
+  vertical-align: sub;
+}
+
+body > .header h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.1rem;
+  
+}
+
+.container {
+  width: 100%;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container nav {
+  height: 2.1rem;
+  font-size: 0.9rem;
+}
+
+nav ul {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  background-color: #fff;
+}
+
+nav ul li {
+  line-height: 2.1rem;
+  display: inline-block;
+  color: #656565;
+  text-align: center;
+  flex: 1;
+}
+
+nav ul li.active {
+  border-bottom: 0.3rem solid #91D4DA;
+}
+
+img.banner {
+  width: 100%;
+  margin: 0;
+}
+
+.labels,
+.columns {
+  background: #fff;
+  padding-left: .3rem;
+  padding-right: .3rem;
+}
+
+.labels ul {
+  display: flex;
+  margin: 0;
+  border-bottom: .05rem solid #ECECEC;
+}
+
+.labels ul li {
+  flex: 1;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.labels ul li .icon {
+  position: relative;
+  margin: 0;
+  display: block;
+  height: 2.5rem;
+  width: 2.5rem;
+  background: #00C7D6;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+.labels ul li .icon img,
+.columns ul li .icon img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  margin: auto;
+}
+
+.labels ul li .icon p {
+  margin-bottom: 0.3rem;
+}
+
+.columns {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+.columns ul {
+  display: flex;
+  margin: 0;
+}
+
+.columns ul li {
+  flex: 1;
+  text-align: center;
+}
+.columns ul li:not(:last-child) {
+  border-right: .05rem solid #ECECEC;
+}
+
+.columns ul li .icon {
+  position: relative;
+  display: block;
+  height: 3.6rem;
+  width: 3.6rem;
+  margin: 0.3rem auto;
+}
+
+.columns ul li .icon img {
+  width: 100%;
+  
+}
+
+.columns ul li h2 {
+  font-size: 1.2rem;
+}
+
+.columns ul li p {
+  font-weight: bold;
+  color: #5B5B5B;
+}
+
+.module {
+  margin-top: 0.5rem;
+  background-color: #fff;
+  padding-left: .3rem;
+  padding-right: .3rem;
+}
+
+.module .header {
+  font-size: 1rem;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  margin-bottom: 0.4rem;
+  border-bottom: .05rem solid #ECECEC;
+  padding-left: 0.5rem;
+}
+
+.module .article {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: .5rem;
+}
+
+.module .article img {
+  width: 4.8rem;
+  height: 4.4rem;
+  border: .02rem solid #FEB832;
+}
+
+.module .article ul {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  margin: 0;
+}
+
+.module .article ul li {
+  text-align: center;
+  width: 45%;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  font-size: 0.8rem;
+  background-color: #F8F8F8;
+}
+
+.articles {
+  margin-top: 0.5rem;
+  background-color: #fff;
+}
+
+.articles article {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  border-bottom: 1px solid #ECECEC;
+  padding: 0.5rem;
+}
+
+.articles article > img {
+  width: 6rem;
+  height: 4.2rem;
+  margin-right: 0.4rem;
+}
+
+.articles article .info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.articles article .info h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.articles article .info p {
+  font-size: 0.6rem;
+  color: #C6C6C6;
+  margin: 0;
+}
+
+.articles article .info .pics {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.articles article .info .pics li img {
+  text-align: center;
+  width: 95%;
+}
