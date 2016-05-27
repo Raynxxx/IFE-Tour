@@ -11,5 +11,5 @@
 
 ### 第二阶段 JavaScript
 
-- [] 任务十六：零基础JavaScript编码（四）
-- [] 任务十七：零基础JavaScript编码（五）
+- [X] 任务十六：零基础JavaScript编码（四）
+- [X] 任务十七：零基础JavaScript编码（五）
