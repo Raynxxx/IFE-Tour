@@ -1,0 +1,43 @@
+
+input {
+  margin: 5px 10px;
+  width: 200px;
+  height: 30px;
+}
+
+div[id$="container"] {
+  margin: 15px 3px;
+  padding: 10px;
+}
+
+div[id$="container"]::before,
+div[id$="container"]::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+div[id$="container"] span {
+  margin: 5px;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: deepskyblue;
+  display: inline-block;
+}
+
+
+div[id$="container"] span.del {
+  background-color: red;
+}
+
+textarea {
+  margin: 5px 20px;
+}
+
+button {
+  margin: 5px 20px;
+  background-color: #fff;
+  border-radius: 10%;;
+  outline: none;
+  border: 1px solid #bbb;
+}

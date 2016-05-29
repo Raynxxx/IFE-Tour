@@ -13,3 +13,4 @@
 
 - [X] 任务十六：零基础JavaScript编码（四）
 - [X] 任务十七：零基础JavaScript编码（五）
+- [X] 任务二十一：基础JavaScript练习（四）
