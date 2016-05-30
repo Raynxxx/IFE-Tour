@@ -1,0 +1,96 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body > .container {
+  width: 600px;
+  margin: 30px auto;
+  padding: 10px;
+  border: 3px solid gray;
+  border-radius: 3px;
+}
+
+.search-bar {
+  margin: 10px;
+}
+
+.search-bar input {
+  font-size: 18px;
+  padding: 0 5px;
+  width: 300px;
+  height: 40px;
+  border: 2px solid #aaa;
+}
+
+.search-bar button {
+  background-color: #fff;
+  border: 1px solid #d5d5d5;
+  height: 38px;
+  width: 60px;
+  box-shadow: 1px 1px 1px #959595;
+}
+
+.menu-box {
+  margin: 10px;
+}
+
+.tree-node {
+  padding-left: 10px;
+}
+
+.tree-node.fold > .childs-box {
+  display: none;
+}
+
+.tree-node.mark > .node-header > .node-title {
+  color: red;
+}
+
+.node-header .arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+}
+
+.node-header .arrow.arrow-right {
+  border-left: 12px solid gray;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+.node-header .arrow.arrow-down {
+  border-top: 12px solid gray;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+
+.node-header .node-title {
+  display: inline-block;
+  margin: 5px 15px 5px 5px;
+}
+
+.node-header button {
+  display: none;
+  margin-left: 3px;
+  padding: 1px 5px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.node-header button:focus {
+  outline: none;
+}
+
+.node-header:hover button {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.childs-box {
+  margin-left: 20px;
+}
